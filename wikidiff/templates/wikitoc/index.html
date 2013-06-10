@@ -1,0 +1,64 @@
+{% load bootstrap_toolkit %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wikipedia diff analyzer - TOC</title>
+    <meta name="description" content="wikidiff TOC analyzer">
+    <meta name="author" content="Daniele Ciminieri">
+    {% bootstrap_stylesheet_tag %}
+    {% bootstrap_stylesheet_tag "responsive" %}
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    {% bootstrap_javascript_tag %}
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">WikiDiff</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    {% bootstrap_messages %}
+
+    {% block content %}WikiDiff is a tool to analyze the versioning of the table of contents of a Wikipedia page. Start by submitting a valid Wikipedia url.{% endblock %}
+
+    <p><hr></p>
+    
+    <form class="form-{{ layout }}" action="" method="post">
+        {% csrf_token %}
+        {{ form|as_bootstrap:layout }}
+        {% if layout == "horizontal" %}
+            <p class="form-actions">
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </p>
+        {% else %}
+            <input type="submit" value="Submit" class="btn btn-primary">
+        {% endif %}
+    </form>
+
+    <footer class="row">
+        <div class="span6">
+            <p>
+                &copy; <a href="http://www.densitydesign.org">DensityDesign</a> 2013
+            </p>
+        </div>
+    </footer>
+
+</div> <!-- container -->
+
+</body>
+</html>

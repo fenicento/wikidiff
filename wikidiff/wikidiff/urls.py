@@ -5,6 +5,7 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^wikitoc/', include('wikitoc.urls')),
     # Examples:
     # url(r'^$', 'wikidiff.views.home', name='home'),
     # url(r'^wikidiff/', include('wikidiff.foo.urls')),
