@@ -2,11 +2,27 @@
 
 import sys
 from os.path import abspath, basename, dirname, join, normpath
+import djcelery
+
+djcelery.setup_loader()
 
 PROJECT_PATH = dirname(abspath(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+
+#BROKER_URL = "django://"
+BROKER_BACKEND = "djkombu.transport.DatabaseTransport"
+#celery
+
+BROKER_URL = "localhost"
+BROKER_PORT = 5672
+BROKER_USER = "guest"
+BROKER_PASSWORD = "guest"
+BROKER_VHOST = "/"
+CELERY_IMPORTS = ("wikitoc.scripts.toc_scraper", )
+
+
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -143,6 +159,9 @@ INSTALLED_APPS = (
     'bootstrap_toolkit',
     'wikitoc',
     'south',
+    'djkombu',
+    'kombu.transport.django',  
+    'djcelery',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

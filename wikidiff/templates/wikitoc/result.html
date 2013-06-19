@@ -50,49 +50,55 @@
 
     {% bootstrap_messages %}
 
-    {% block content %}Results for {{voice}}{% endblock %}
-
-    <p><hr></p>
+    {% block content %}{% endblock %}
+	<div id="computing" style="display:none;"><span id="comp-curr">0</span> of <span id="comp-tot">0</span> revisions downloaded.</div>
+    <div class="progress progress-striped">
+ 	 <div class="bar" id="bar" style="width: 0;"></div>
+	</div>
     
-    	<!-- <div class="row">
-    		
-    	<div class="cell id">Revision ID</div>
-  		<div class="cell ind">Index</div>
-  		<div class="cell num">Number</div>
-  		<div class="cell name">Name</div>
-  		<div class="cell byte">Byte offset</div>
-    	
-    	</div>
-    	
-  	{% for v in list %}
-  	
-  	<div class="row">
-  		
-  		<div class="cell id">{{v.0}}</div>
-  		<div class="cell ind">{{v.1}}</div>
-  		<div class="cell num">{{v.2}}</div>
-  		<div class="cell name">{{v.3}}</div>
-  		<div class="cell byte">{{v.4}}</div>
-  	</div>
-  	
-  	{% endfor %} -->
   	
   	<script type="application/javascript">
-  		data={{data|safe}}
-  		
-  	</script>
   	
-  	<script type="application/javascript">
-
-  	var n = data.length, // number of layers
-    m = data[0].length, // number of samples per layer
+  	worker();
+ 
+	
+	function worker() {
+		$.getJSON('poll_state?job={{job}}', function(data) {
+			console.log(data)
+			if(data=="PENDING" || data.current!=null) {
+				console.log(data.current);
+				$('#bar').attr("style","width:"+data.current/data.total*100+"%;");
+				if($("#computing").css('display') == 'none'){
+					$("#computing").show();
+				}
+				$('#comp-curr').text(data.current);
+				$('#comp-tot').text(data.total);
+				if($("#computing").css('display') == 'none' && data.current!=null){
+					$("#computing").show();
+				}
+				setTimeout(worker, 1000);
+			}	
+			
+			else if (data.list!= null) {
+				console.log("fatto!");
+				graph(data.data);
+			}
+			
+		});
+	}
+	
+	
+	function graph(dat) {
+	$(".progress").remove();
+  	var n = dat.length, // number of layers
+    m = dat[0].length, // number of samples per layer
     stack = d3.layout.stack(),
-    layers = stack(data),
+    layers = stack(dat),
     yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
 
 	var margin = {top: 40, right: 10, bottom: 20, left: 10},
     width = 960 - margin.left - margin.right,
-    height = data[0].length*30 - margin.top - margin.bottom;
+    height = dat[0].length*30 - margin.top - margin.bottom;
 
 	var y = d3.scale.ordinal()
     .domain(d3.range(m))
@@ -106,11 +112,7 @@
     .domain([0, n - 1])
     .range(["#aad", "#556"]);
 
-	// var xAxis = d3.svg.axis()
-    // .scale(x)
-    // .tickSize(0)
-    // .tickPadding(6)
-    // .orient("bottom");
+
 
 	var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -123,12 +125,13 @@
   	.enter().append("g")
     .attr("class", "layer")
     .style("fill", function(d, i) { return color(i); });
-
+	
+	
 	var rect = layer.selectAll("rect")
     .data(function(d) { return d; })
   	.enter().append("rect")
     .attr("y", function(d) { return y(d.x); })
-    .attr("x", function(d) { return x(d.y0);})
+    .attr("x", function(d) { console.log(d.rev+" "+d.x+ " "+d.y+ " "+d.label); return x(d.y0);})
     .attr("height", 20)
     .attr("width", function(d) { return x(d.y); })
     .attr("opacity", 1.0)
@@ -155,19 +158,7 @@
 		.attr("y", ".35em")
 		.text(d.label)
     })
-    
-
-
-	// var yAxis = d3.svg.axis()
-    // .scale(y)
-    // .tickSize(1)
-    // .tickPadding(6)
-	// .tickValues(labels)
-    // .orient("left");
- 
-	// svg.append("g")
-    // .attr("class", "y axis")
-    // .call(yAxis);
+   }
   	</script>
   	
     <footer class="row">

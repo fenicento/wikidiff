@@ -3,6 +3,9 @@ import csv
 import json
 import sys
 from toc_compare import compareTocs
+from toc_compare2 import compareTocs2
+from celery import task, current_task
+from celery.result import AsyncResult
 import re
 import urllib
 #encoding= utf-8
@@ -11,6 +14,7 @@ baseUrl= 'http://en.wikipedia.org/w/api.php?'
 revisionsTot = []
 lst=[]
 
+@task(name='tasks.scrapeTocs')
 def scrapeTocs(voice,lang):
 	
 	print lang
@@ -53,6 +57,9 @@ def scrapeTocs(voice,lang):
 			
 			print "parsing revision "+ str(i) + " of " + str(len(revisionsTot))
 			
+			current_task.update_state(state='PROGRESS',
+            meta={'current': i, 'total': len(revisionsTot)})
+			
 			# progInt=(i/len(revisionsTot))*30
 			# progress="*" * int(progInt)
 			# tot="_"*int(30-int(progInt))
@@ -79,7 +86,8 @@ def scrapeTocs(voice,lang):
 		except Exception, e:
 			print "Unexpected error:", e
 	
-	res = compareTocs(lst);
+	res=compareTocs(lst,voice);
+	print res
 	return res
 
 def revScraper(params, baseUrl):
@@ -115,4 +123,5 @@ def revScraper(params, baseUrl):
 	
 	except Exception, e:
 		print "Unexpected error:", e
+
 	

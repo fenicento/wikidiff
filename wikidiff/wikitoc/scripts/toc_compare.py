@@ -1,7 +1,9 @@
 from datadiff import diff
+from django.shortcuts import render_to_response, get_object_or_404
 import csv
 import json
 import os
+import re,copy
 from itertools import cycle
 import collections
 import urllib
@@ -9,7 +11,7 @@ import urllib
 
 
 
-def compareTocs(listing):
+def compareTocs(listing,voice):
 	listcycle = cycle(listing)
 	nextelem = listcycle.next()
 	
@@ -90,7 +92,140 @@ def compareTocs(listing):
 						collection.append([revId, ind, num, tocName, offset,ts])
 					print revId
 	
-	return collection
+	return lookup(collection,voice)
+
+def lookup(lst,voice):    
+    
+    res=formatData2(lst)
+    #res=json.dumps(res)
+    print res
+    
+    
+    params={
+            'list':lst,
+            'data':res,
+            'voice': voice.replace("_"," ")
+            }
+    
+    #return render_to_response('wikitoc/result.html',params)
+    return params
+
+def formatData(lst):
+    
+   
+    lst.append([0,0,0,"0","0","0"])
+    
+    names=list()
+    
+    
+    for l in lst:
+        if l[3] in names:
+            pass
+        else:
+            names.append(l[3])
+    
+    print names
+    res=list()
+            
+    for n in names:
+        
+        currRev=lst[0][5]
+        col=list()
+        check = False
+        
+        for l in lst:
+            if currRev==l[5] and n == l[3]:
+                nth=dict()
+                nth['rev']=l[0]
+                nth['x']=l[5]
+                nth['y']=l[4]
+                nth['label'] = l[3]
+                col.append(nth.copy())
+                check=True
+                
+            elif currRev!=l[5] and n ==l[3]:
+                nth=dict()
+                nth['rev']=l[0]
+                nth['x']=l[5]
+                nth['y']=l[4]
+                nth['label'] = l[3]
+                currRev=l[5]
+                col.append(nth.copy())
+                check=True
+                
+            elif currRev==[5] and n !=l[3]:      
+                continue
+            
+            elif currRev!=l[5] and n !=l[3] and not check:
+                
+                nth=dict()
+                nth['rev']=l[0]
+                nth['x']=currRev
+                nth['y']=0
+                nth['label'] = n
+                currRev=l[5]
+                col.append(nth.copy())
+                
+            elif currRev!=l[5] and n !=l[3] and check:
+                currRev=l[5]
+                check=False
+            
+        res.append(copy.copy(col))
+    res.pop()
+    return res
+
+   
+def formatData2(lst):
+    
+    names=list()
+    res=list()
+    
+    for l in lst:
+        if l[3] in names:
+            pass
+        else:
+            names.append(l[3])
+    
+    values = sorted(set(map(lambda x:x[0], lst)),reverse=True)
+    newlist = [[y for y in lst if y[0]==x] for x in values]  
+    
+    for n in names:
+        
+        namelist=list()
+        
+        for r in newlist:
+            check=False
+            
+            for sr in r:
+                
+                if(sr[3])==n and not check:
+                    nth=dict()
+                    nth['rev']=sr[0]
+                    nth['x']=sr[5]
+                    nth['y']=sr[4]
+                    nth['label'] = sr[3]
+                    namelist.append(nth.copy())
+                    check=True
+                    
+                elif (sr[3])==n and check:
+                    pass
+                
+                    
+            if not check:
+                nth=dict()
+                nth['rev']=sr[0]
+                nth['x']=sr[5]
+                nth['y']=0
+                nth['label'] = n
+                namelist.append(nth.copy())
+            
+        
+        res.append(namelist)
+    
+    
+    res.pop()
+    print res
+    return res
 
 def tocLength(a,b):
 	if len(a['sections']) != len(b['sections']):
@@ -100,23 +235,3 @@ def tocLength(a,b):
 
 
 
-#headers = ['revId', 'tocName', 'tocLength']
-#writer = csv.writer(open('toc_change_rev_new.tsv', 'wb'), delimiter='\t', quotechar='"')
-#writer.writerow(headers)
-#writer.writerows(collection)
-
-# for i in [i for i,x in enumerate(rev_2['sections'])]:
-# 	print i, x['anchor']
-	
-# for index, s in enumerate(rev_2['sections']):
-#     print index, s['anchor'], s['number']
-#     
-# for index, s in enumerate(rev_1['sections']):
-#     print index, s['anchor'], s['number']
-	
-# for i in [i for i,x in enumerate(rev_2['sections']) if x['anchor'] == 'Modern_methods']:
-# 	print i
-	
-
-#tocLength(rev_1,rev_2)
-#compare = lambda x, y: collections.Counter(x) == collections.Counter(y)
