@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     url(r'^lookup/(?P<voice>\w+).*$', views.init_work),
     url(r'^poll_state$', views.poll_state,name='poll_state'),
     url(r'^progress$', views.poll_state),
+    url(r'^example$', views.example),
 )

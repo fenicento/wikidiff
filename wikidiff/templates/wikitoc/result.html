@@ -9,6 +9,8 @@
 	<meta http-equiv="Pragma" content="no-cache" />
     {% bootstrap_stylesheet_tag %}
     {% bootstrap_stylesheet_tag "responsive" %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static "wikitoc/css/style.css" %}">
     <style type="text/css">
         body {
             padding-top: 60px;
@@ -50,11 +52,25 @@
 
     {% bootstrap_messages %}
 
-    {% block content %}{% endblock %}
-	<div id="computing" style="display:none;"><span id="comp-curr">0</span> of <span id="comp-tot">0</span> revisions downloaded.</div>
-    <div class="progress progress-striped">
- 	 <div class="bar" id="bar" style="width: 0;"></div>
+    {% block content %}
+    <div class="row">
+	    <div id="dl-rev">Downloading revisions index...</div>
+			<div id="computing" style="display:none;"><span id="comp-curr">0</span> of <span id="comp-tot">0</span> revisions downloaded.
+			<p id="timing"></p>	
+		</div>
 	</div>
+	<div class="row">
+	    <div class="progress progress-striped">
+	 	 	<div class="bar" id="bar" style="width: 0;"></div>
+		</div>
+   </div>
+   
+   <div class="row" id="graph">
+   	
+   </div>
+    
+    {% endblock %}
+    
     
   	
   	<script type="application/javascript">
@@ -65,17 +81,23 @@
 	function worker() {
 		$.getJSON('poll_state?job={{job}}', function(data) {
 			console.log(data)
-			if(data=="PENDING" || data.current!=null) {
+			
+			if(data=="PENDING")
+				setTimeout(worker, 1000);
+				
+			else if(data.current!=null) {
 				console.log(data.current);
 				$('#bar').attr("style","width:"+data.current/data.total*100+"%;");
-				if($("#computing").css('display') == 'none'){
-					$("#computing").show();
+				if($("#dl-rev").css('display') == 'block'){
+					$("#dl-rev").hide();
 				}
 				$('#comp-curr').text(data.current);
 				$('#comp-tot').text(data.total);
+				$('#timing').text(data.time);
 				if($("#computing").css('display') == 'none' && data.current!=null){
 					$("#computing").show();
 				}
+				
 				setTimeout(worker, 1000);
 			}	
 			
@@ -89,6 +111,7 @@
 	
 	
 	function graph(dat) {
+	$("#computing").remove();
 	$(".progress").remove();
   	var n = dat.length, // number of layers
     m = dat[0].length, // number of samples per layer
@@ -114,7 +137,7 @@
 
 
 
-	var svg = d3.select("body").append("svg")
+	var svg = d3.select("#graph").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   	.append("g")

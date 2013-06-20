@@ -158,6 +158,17 @@ def formatData2(lst):
     print res
     return res
 
+def example(request):
+    lst=compareTocs2()
+    res=formatData2(lst)
+    params={
+            'list':lst,
+            'data':json.dumps(res),
+            'voice': "Family Planning"
+            }
+    return render_to_response('wikitoc/example.html',params)
+    
+
 def poll_state(request):
     """ A view to report the progress to the user """
     if 'job' in request.GET:

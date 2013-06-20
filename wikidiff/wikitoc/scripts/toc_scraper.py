@@ -6,7 +6,7 @@ from toc_compare import compareTocs
 from toc_compare2 import compareTocs2
 from celery import task, current_task
 from celery.result import AsyncResult
-import re
+import re, time
 import urllib
 #encoding= utf-8
 
@@ -50,15 +50,14 @@ def scrapeTocs(voice,lang):
 	print 'Parto con i TOC'
 
 	i = 0;
-
+	
+	start_time = time.time()
+	
 	for revId in revisionsTot:
 		try:
 			i=i+1
 			
 			print "parsing revision "+ str(i) + " of " + str(len(revisionsTot))
-			
-			current_task.update_state(state='PROGRESS',
-            meta={'current': i, 'total': len(revisionsTot)})
 			
 			# progInt=(i/len(revisionsTot))*30
 			# progress="*" * int(progInt)
@@ -79,6 +78,25 @@ def scrapeTocs(voice,lang):
 			
 			
 			lst.append(output)
+			
+			tot_t=time.time() - start_time
+			uni_t=tot_t/i;
+			rem_t=int(uni_t*(len(revisionsTot)-i))
+			rem_str="";
+			print rem_t
+			if rem_t>3600:
+				h=int(rem_t/3600)
+				m=int(rem_t/60-h*60)
+				s=int(rem_t-m*60)
+				rem_str="Approximately "+str(h)+" hours, "+str(m)+" minutes and "+str(s)+" seconds remaining"
+			elif rem_t>60:
+				m=int(rem_t/60)
+				s=int(rem_t-m*60)
+				rem_str="Approximately "+str(m)+" minutes and "+str(s)+" seconds remaining"
+			else:
+				rem_str="Approximately "+str(rem_t)+" seconds remaining"
+			
+			current_task.update_state(state='PROGRESS', meta={'current': i, 'total': len(revisionsTot),'time':rem_str})
 			#f = open("toc/" + title + "_" + str(revId) + ".json","wb")
 			#f.write(json.dumps(output,sort_keys=False, indent=4))
 			
