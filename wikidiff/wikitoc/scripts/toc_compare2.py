@@ -47,7 +47,7 @@ def compareTocs2():
                     num0=0
                     offset0=int(rev_1['sections'][0]['byteoffset'])
                     name0='intro'
-                    collection.append([revId,ind0,num0,name0,offset0,ts])
+                    collection.append({'revId':revId, 'ind':ind0, 'num':num0, 'tocName':name0, 'offset':offset0,'ts':ts})
                     
                     for index, s in enumerate(rev_1['sections']):
                         tocName = s['line']
@@ -60,7 +60,7 @@ def compareTocs2():
                         except Exception, err:
                             offset = int(rev_1['size'])-int(s['byteoffset'])
 
-                        collection.append([revId, ind, num, tocName, offset,ts])
+                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'tocName':tocName, 'offset':offset,'ts':ts})
                     
                     print revId
                 
@@ -81,7 +81,7 @@ def compareTocs2():
                     num0=0
                     offset0=int(rev_1['sections'][0]['byteoffset'])
                     name0='intro'
-                    collection.append([revId,ind0,num0,name0,offset0,ts])
+                    collection.append({'revId':revId, 'ind':ind0, 'num':num0, 'tocName':name0, 'offset':offset0,'ts':ts})
                     
                     for index, s in enumerate(rev_1['sections']):
                         tocName = s['line']
@@ -97,7 +97,7 @@ def compareTocs2():
                             print err
                             offset = int(rev_1['size'])-int(s['byteoffset'])
                             print "#########################"
-                        collection.append([revId, ind, num, tocName, offset,ts])
+                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'tocName':tocName, 'offset':offset,'ts':ts})
                     print revId
     
     return collection

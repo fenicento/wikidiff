@@ -9,6 +9,11 @@ from scripts.toc_compare2 import compareTocs2
 import re,json, copy
 from celery import task, current_task
 from celery.result import AsyncResult
+import pprint
+from dateutil import parser
+import datetime
+from math import fabs
+from operator import itemgetter
 
 from bootstrap_toolkit.widgets import BootstrapUneditableInput
 
@@ -110,62 +115,110 @@ def formatData2(lst):
     
     names=list()
     res=list()
+    pp = pprint.PrettyPrinter(indent=4)
     
     for l in lst:
-        if l[3] in names:
+        
+        if l['tocName'] in names:
             pass
         else:
-            names.append(l[3])
+            names.append(l['tocName'])
     
-    values = sorted(set(map(lambda x:x[0], lst)),reverse=True)
-    newlist = [[y for y in lst if y[0]==x] for x in values]  
+    values = sorted(set(map(lambda x:x['revId'], lst)),reverse=True)
     
-    for n in names:
+    newlist = [[y for y in lst if y['revId']==x] for x in values]  
+    
+    
+    longest=0
+    oldest=datetime.datetime(1970,2,11,20,0,0,0)
+    newest=datetime.datetime.now()
+    previous=oldest
+    overlapping=0
+    days=0
+    i=0
+    
+    newlist.sort(comparator)
+    
+    for ind,n in enumerate(newlist):
+        g=0
+        prevOffset=0
+        prevOverlap=0
         
-        namelist=list()
-        
-        for r in newlist:
-            check=False
+        #questa parte va ad un livello superiore!!!!!  
+        if(i>0):  
+     
             
-            for sr in r:
+            previous=parser.parse(newlist[i-1][0]['ts'])
+            actual=parser.parse(n[0]['ts'][:10])
+          
+            delta=actual-previous
+            days=fabs(delta.days)
+            overlapping=overlapping+days
+   
+        
+        for m in n:
+            
+            if(ind<len(newlist)-1):
                 
-                if(sr[3])==n and not check:
-                    nth=dict()
-                    nth['rev']=sr[0]
-                    nth['x']=sr[5]
-                    nth['y']=sr[4]
-                    nth['label'] = sr[3]
-                    namelist.append(nth.copy())
-                    check=True
+                try:
+                    pind=map(itemgetter('tocName'), newlist[ind+1]).index(m['tocName'])
+                    m['change']=-(newlist[ind+1][pind]['offset']-m['offset'])
+                except:
+                    m['new']=True
                     
-                elif (sr[3])==n and check:
-                    pass
+            if(ind>0):
+                try:
+                    pind=map(itemgetter('tocName'), newlist[ind-1]).index(m['tocName'])
+                except:
+                    m['last']=True
                 
-                    
-            if not check:
-                nth=dict()
-                nth['rev']=sr[0]
-                nth['x']=sr[5]
-                nth['y']=0
-                nth['label'] = n
-                namelist.append(nth.copy())
+            
+            g=g+m['offset']
+            m['y']=i
+            m['ts']=m['ts'][:10]
+            m['days']=days
+            m['start']=prevOffset
+            d=parser.parse(m['ts'])
+        
+            if d<newest:
+                newest=d
+            if d>oldest:
+                oldest=d
+            
+            
+            prevOffset=prevOffset+m['offset']
+
+        if g>longest:
+            longest=g
             
         
-        res.append(namelist)
+        
+        i=i+1
+
+    return newlist,longest,oldest.strftime("%Y-%m-%d"),newest.strftime("%Y-%m-%d"), overlapping
+
+def comparator(x, y):
     
-    
-    res.pop()
-    print res
-    return res
+    a=parser.parse(x[0]['ts'])
+    b=parser.parse(y[0]['ts'])
+    d=b-a
+    print "seconds:"
+    print d.seconds
+    return int(d.total_seconds())
 
 def example(request):
     lst=compareTocs2()
-    res=formatData2(lst)
+    res,longest,oldest,newest,overlapping=formatData2(lst)
     params={
             'list':lst,
             'data':json.dumps(res),
+            'longest':longest,
+            'oldest':oldest,
+            'newest':newest,
+            'days':overlapping,
             'voice': "Family Planning"
             }
+   
     return render_to_response('wikitoc/example.html',params)
     
 
