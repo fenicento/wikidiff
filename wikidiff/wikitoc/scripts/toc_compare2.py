@@ -50,9 +50,11 @@ def compareTocs2():
                     collection.append({'revId':revId, 'ind':ind0, 'num':num0, 'tocName':name0, 'offset':offset0,'ts':ts})
                     
                     for index, s in enumerate(rev_1['sections']):
+                       
                         tocName = s['line']
                         tocName=tocName.encode('utf8')
                         ind=s['index']
+                        anchor=s['anchor']
                         num=s['number']
                         try:
                             offset = int(rev_1['sections'][int(index)+1]['byteoffset']) - int(s['byteoffset'])
@@ -60,7 +62,7 @@ def compareTocs2():
                         except Exception, err:
                             offset = int(rev_1['size'])-int(s['byteoffset'])
 
-                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'tocName':tocName, 'offset':offset,'ts':ts})
+                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'tocName':tocName, 'anchor':anchor, 'offset':offset,'ts':ts})
                     
                     print revId
                 
@@ -87,6 +89,7 @@ def compareTocs2():
                         tocName = s['line']
                         tocName=tocName.encode('utf8')
                         ind=s['index']
+                        anchor=s['anchor']
                         num=s['number']
                         try:
                             offset = int(rev_1['sections'][int(index)+1]['byteoffset']) - int(s['byteoffset'])
@@ -97,7 +100,7 @@ def compareTocs2():
                             print err
                             offset = int(rev_1['size'])-int(s['byteoffset'])
                             print "#########################"
-                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'tocName':tocName, 'offset':offset,'ts':ts})
+                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'anchor':anchor,'tocName':tocName, 'offset':offset,'ts':ts})
                     print revId
     
     return collection

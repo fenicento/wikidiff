@@ -3,15 +3,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="69.275px" height="79.342px" viewBox="0 0 69.275 79.342" enable-background="new 0 0 69.275 79.342" xml:space="preserve">
+<polygon fill="#3F8CCB" points="69.275,64.778 44.189,64.778 33.871,79.342 23.14,64.778 0,64.778 0,0 69.275,0 "/>
+<path fill="#FFFFFF" d="M55.034,31.852c0,11.517-9.341,20.858-20.854,20.858c-11.525,0-20.86-9.341-20.86-20.858
+	c0-11.526,9.334-20.863,20.86-20.863C45.693,10.989,55.034,20.326,55.034,31.852z"/>
 <g>
-	<polygon fill="#3F8CCB" points="69.275,64.778 44.189,64.778 33.871,79.342 23.14,64.778 0,64.778 0,0 69.275,0 	"/>
-	<path fill="#FFFFFF" d="M55.034,31.852c0,11.517-9.341,20.858-20.854,20.858c-11.525,0-20.86-9.341-20.86-20.858
-		c0-11.526,9.334-20.863,20.86-20.863C45.693,10.989,55.034,20.326,55.034,31.852z"/>
 	<g>
-		<g>
-			
-				<line fill="none" stroke="#3F8CCB" stroke-width="0.6639" stroke-miterlimit="10" x1="44.215" y1="31.852" x2="25.386" y2="31.852"/>
-		</g>
+		<line fill="none" stroke="#3F8CCB" stroke-width="4" stroke-miterlimit="10" x1="44.215" y1="31.852" x2="25.386" y2="31.852"/>
 	</g>
 </g>
 </svg>
