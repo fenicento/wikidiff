@@ -63,8 +63,10 @@
    </div>
    
    <div class="row" id="graph">
-   	
+   		 
    </div>
+   
+   <a href="#" id="download" style="width:80px;height:20px">Download</a>
     
     {% endblock %}
     
@@ -79,16 +81,41 @@
   <defs>
     
 
-    <pattern id="more1" x="10" y="10" width="8" height="8" patternUnits = "userSpaceOnUse">
-      <circle cx="4" cy="4" r="2" fill="#F7D1B4" fill-opacity="1"/>
+    <pattern id="more1" x="10" y="12" width="12" height="12" patternUnits = "userSpaceOnUse">
+      <circle cx="6" cy="6" r="3" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="0" cy="0" r="3" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="0" cy="12" r="3" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="12" cy="0" r="3" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="12" cy="12" r="3" fill="#F7D1B4" fill-opacity="1"/>
     </pattern> 
     
-     <pattern id="more2" x="10" y="10" width="8" height="8" patternUnits = "userSpaceOnUse">
-      <circle cx="6" cy="6" r="2" fill="#F7D1B4" fill-opacity="1"/>
+    <pattern id="more2" x="10" y="10" width="10" height="10" patternUnits = "userSpaceOnUse">
+      <circle cx="5" cy="5" r="2" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="0" cy="0" r="2" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="0" cy="10" r="2" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="10" cy="0" r="2" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="10" cy="10" r="2" fill="#F7D1B4" fill-opacity="1"/>
     </pattern> 
     
-     <pattern id="more3" x="10" y="10" width="8" height="8" patternUnits = "userSpaceOnUse">
-      <circle cx="8" cy="8" r="2" fill="#F7D1B4" fill-opacity="1"/>
+     <pattern id="more3" x="10" y="10" width="10" height="10" patternUnits = "userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="0" cy="0" r="1" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="0" cy="10" r="1" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="10" cy="0" r="1" fill="#F7D1B4" fill-opacity="1"/>
+      <circle cx="10" cy="10" r="1" fill="#F7D1B4" fill-opacity="1"/>
+    </pattern> 
+    
+    
+    <pattern id="less1" x="8" y="8" width="8" height="8" patternUnits = "userSpaceOnUse">
+      <line x1="0" y1="0" x2="8" y2="8" stroke-width="1" stroke="#9CD3F7" />
+    </pattern> 
+    
+     <pattern id="less2" x="12" y="12" width="12" height="12" patternUnits = "userSpaceOnUse">
+       <line x1="0" y1="0" x2="12" y2="12" stroke-width="1" stroke="#9CD3F7" />
+    </pattern> 
+    
+     <pattern id="less3" x="15" y="15" width="15" height="15" patternUnits = "userSpaceOnUse">
+       <line x1="0" y1="0" x2="15" y2="15" stroke-width="1" stroke="#9CD3F7" />
     </pattern> 
 
   </defs>
@@ -96,8 +123,11 @@
 </svg>
 
   	<script>
+  		
   		var dat={{data|safe}},
   		longest={{longest}},
+  		lang="en",
+  		voice="family_planning",
   		oldest="{{oldest|safe}}",
   		newest="{{newest|safe}}",
   		days={{days}}

@@ -30,67 +30,70 @@ def compareTocs(listing,voice):
 			
 			
 			#print tocLength(rev_1,rev_2)
-			if tocLength(rev_1,rev_2):
-				if len(rev_1['sections'])>0:
-					revId = rev_1['revid']
-					ts=rev_1['timestamp']
-					
-					ind0=0
-					num0=0
-					offset0=int(rev_1['sections'][0]['byteoffset'])
-					name0='intro'
-					collection.append([revId,ind0,num0,name0,offset0,ts])
-					
-					for index, s in enumerate(rev_1['sections']):
-						tocName = s['line']
-						tocName=tocName.encode('utf8')
-						ind=s['index']
-						num=s['number']
-						try:
-							offset = int(rev_1['sections'][int(index)+1]['byteoffset']) - int(s['byteoffset'])
-							
-						except Exception, err:
-							offset = int(rev_1['size'])-int(s['byteoffset'])
+            if tocLength(rev_1,rev_2):
+                if len(rev_1['sections'])>0:
+                    revId = rev_1['revid']
+                    ts=rev_1['timestamp']
+                    
+                    ind0=0
+                    num0=0
+                    offset0=int(rev_1['sections'][0]['byteoffset'])
+                    name0='intro'
+                    collection.append({'revId':revId, 'ind':ind0, 'num':num0, 'tocName':name0, 'offset':offset0,'ts':ts})
+                    
+                    for index, s in enumerate(rev_1['sections']):
+                       
+                        tocName = s['line']
+                        tocName=tocName.encode('utf8')
+                        ind=s['index']
+                        anchor=s['anchor']
+                        num=s['number']
+                        try:
+                            offset = int(rev_1['sections'][int(index)+1]['byteoffset']) - int(s['byteoffset'])
+                            
+                        except Exception, err:
+                            offset = int(rev_1['size'])-int(s['byteoffset'])
 
-						collection.append([revId, ind, num, tocName, offset,ts])
-					
-					print revId
-				
-			else:
-				list_1 = []
-				list_2 = []
-				for index, s in enumerate(rev_1['sections']):
-					list_1.append([index, s['anchor'], s['number']])
-				for index, s in enumerate(rev_2['sections']):
-					list_2.append([index, s['anchor'], s['number']])
-				if list_1 == list_2:
-					pass
-				elif(len(rev_1['sections'])>0):
-					revId = rev_1['revid']
-					ts=rev_1['timestamp']
-					
-					ind0=0
-					num0=0
-					offset0=int(rev_1['sections'][0]['byteoffset'])
-					name0='intro'
-					collection.append([revId,ind0,num0,name0,offset0,ts])
-					
-					for index, s in enumerate(rev_1['sections']):
-						tocName = s['line']
-						tocName=tocName.encode('utf8')
-						ind=s['index']
-						num=s['number']
-						try:
-							offset = int(rev_1['sections'][int(index)+1]['byteoffset']) - int(s['byteoffset'])
-							
-							print "*************************"
-							
-						except Exception, err:
-							print err
-							offset = int(rev_1['size'])-int(s['byteoffset'])
-							print "#########################"
-						collection.append([revId, ind, num, tocName, offset,ts])
-					print revId
+                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'tocName':tocName, 'anchor':anchor, 'offset':offset,'ts':ts})
+                    
+                    print revId
+                
+            else:
+                list_1 = []
+                list_2 = []
+                for index, s in enumerate(rev_1['sections']):
+                    list_1.append([index, s['anchor'], s['number']])
+                for index, s in enumerate(rev_2['sections']):
+                    list_2.append([index, s['anchor'], s['number']])
+                if list_1 == list_2:
+                    continue
+                elif(len(rev_1['sections'])>0):
+                    revId = rev_1['revid']
+                    ts=rev_1['timestamp']
+                    
+                    ind0=0
+                    num0=0
+                    offset0=int(rev_1['sections'][0]['byteoffset'])
+                    name0='intro'
+                    collection.append({'revId':revId, 'ind':ind0, 'num':num0, 'tocName':name0, 'offset':offset0,'ts':ts})
+                    
+                    for index, s in enumerate(rev_1['sections']):
+                        tocName = s['line']
+                        tocName=tocName.encode('utf8')
+                        ind=s['index']
+                        anchor=s['anchor']
+                        num=s['number']
+                        try:
+                            offset = int(rev_1['sections'][int(index)+1]['byteoffset']) - int(s['byteoffset'])
+                            
+                            print "*************************"
+                            
+                        except Exception, err:
+                            print err
+                            offset = int(rev_1['size'])-int(s['byteoffset'])
+                            print "#########################"
+                        collection.append({'revId':revId, 'ind':ind, 'num':num, 'anchor':anchor,'tocName':tocName, 'offset':offset,'ts':ts})
+                    print revId
 	
 	return lookup(collection,voice)
 

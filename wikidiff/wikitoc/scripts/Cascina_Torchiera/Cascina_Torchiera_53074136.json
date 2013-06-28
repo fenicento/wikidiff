@@ -1,0 +1,68 @@
+{
+    "timestamp": "2012-10-08T19:15:28Z", 
+    "size": 5641, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1097, 
+            "line": "Storia", 
+            "anchor": "Storia"
+        }, 
+        {
+            "index": "2", 
+            "level": "3", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 2, 
+            "number": "1.1", 
+            "byteoffset": 4471, 
+            "line": "Archeologia", 
+            "anchor": "Archeologia"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 4760, 
+            "line": "Attivit\u00e0", 
+            "anchor": "Attivit.C3.A0"
+        }, 
+        {
+            "index": "4", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 5058, 
+            "line": "Note", 
+            "anchor": "Note"
+        }, 
+        {
+            "index": "5", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 5082, 
+            "line": "Bibliografia", 
+            "anchor": "Bibliografia"
+        }, 
+        {
+            "index": "6", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 5359, 
+            "line": "Collegamenti esterni", 
+            "anchor": "Collegamenti_esterni"
+        }
+    ], 
+    "revid": 53074136, 
+    "title": "Cascina Torchiera"
+}

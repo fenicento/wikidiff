@@ -3,6 +3,9 @@
 import sys
 from os.path import abspath, basename, dirname, join, normpath
 import djcelery
+from celery.schedules import crontab
+from datetime import timedelta
+
 
 djcelery.setup_loader()
 
@@ -20,7 +23,7 @@ BROKER_PORT = 5672
 BROKER_USER = "guest"
 BROKER_PASSWORD = "guest"
 BROKER_VHOST = "/"
-CELERY_IMPORTS = ("wikitoc.scripts.toc_scraper", )
+CELERY_IMPORTS = ("wikitoc.scripts.toc_scraper","logo.scripts.schedule" )
 
 
 
@@ -195,4 +198,14 @@ LOGGING = {
             'propagate': True,
         },
     }
+}
+
+  # The default Django db scheduler
+CELERYBEAT_SCHEDULER = "djcelery.schedulers.DatabaseScheduler"
+CELERYBEAT_SCHEDULE = {
+    "scrape-officials": {
+        "task": "tasks.trends",
+        "schedule": timedelta(seconds=3000),
+        "args": ("big","data","society"),
+    },
 }

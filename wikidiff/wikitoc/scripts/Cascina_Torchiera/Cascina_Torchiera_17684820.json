@@ -1,0 +1,38 @@
+{
+    "timestamp": "2008-07-27T08:19:56Z", 
+    "size": 2208, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1326, 
+            "line": "Attivit\u00e0", 
+            "anchor": "Attivit.C3.A0"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 1825, 
+            "line": "Collegamenti esterni", 
+            "anchor": "Collegamenti_esterni"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Cascina_Torchiera", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 2129, 
+            "line": "Voci correlate", 
+            "anchor": "Voci_correlate"
+        }
+    ], 
+    "revid": 17684820, 
+    "title": "Cascina Torchiera"
+}
