@@ -1,0 +1,36 @@
+body{
+	background-color:#f3eee8;
+	color:#53504d;
+	font-family:sans-serif;
+}
+
+
+h1, h2{
+	color:#53504d;
+	font-weight:300;
+}
+
+h1{
+	font-size:2em;
+	text-transform: uppercase;
+}
+
+canvas, .side-txt {
+	float:left;
+	margin-left:5px;
+}
+
+
+.side-txt p {
+	line-height: 25px;
+	font-size: :15px;
+	margin:0;
+}
+
+.clear{
+	clear:both;
+	float:none;
+	width:1px;
+	height:1px;
+	margin-top:10px;
+}

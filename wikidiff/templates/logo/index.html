@@ -1,17 +1,98 @@
 <html>
     <head>
-        <title>{% block head_title %}Big Data &amp; Society{% endblock %}</title>
+    <title>{% block head_title %}Big Data &amp; Society{% endblock %}</title>
+	<meta charset="utf-8">
+    <meta name="description" content="dynamic logo">
+    <meta name="author" content="Daniele Ciminieri">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, post-check=0, pre-check=0" /> 
+	<meta http-equiv="Pragma" content="no-cache" />
+	
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static "logo/css/logo.css" %}">
+    <script src='{% static "logo/js/processing-1.4.1.min.js" %}'></script>
+    <script src='{% static "logo/js/dat.gui.min.js" %}'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
     </head>
     <body>
         <h1>{% block title %}Big Data &amp; Society{% endblock %}</h1>
         
         {% block content %}
-
-		<script type="application/javascript">
-			
-			
-			
+        
+        <script type="text/javascript">
+    
+		var pyramid = function() {
+		  this.q1 = "big";
+		  this.q2 = "data";
+		  this.q3 = "society";
+		  this.q4 = "research";
+		};
+		
+		var text = new pyramid();
+		
 		</script>
+        
+		<h2>#1 - Pyramid logo</h2>
+		<canvas id="trainglogo" data-processing-sources='{% static "logo/js/traing_logo.pde" %}' width="100" height="100" tabindex="0" style="image-rendering: -webkit-optimize-contrast !important;">
+					<p>Your browser does not support the canvas tag.</p>
+		</canvas>
+		
+		<div class="clear"></div>
+		<h2>#2 - Square logos</h2>
+		<canvas id="lines" data-processing-sources='{% static "logo/js/lines.pde" %}' width="100" height="100" tabindex="0" style="image-rendering: -webkit-optimize-contrast !important;">
+					<p>Your browser does not support the canvas tag.</p>
+		</canvas>
+		
+		<canvas id="rays" data-processing-sources='{% static "logo/js/rays.pde" %}' width="100" height="100" tabindex="0" style="image-rendering: -webkit-optimize-contrast !important;">
+					<p>Your browser does not support the canvas tag.</p>
+		</canvas>
+		
+		<canvas id="squares" data-processing-sources='{% static "logo/js/squares.pde" %}' width="100" height="100" tabindex="0" style="image-rendering: -webkit-optimize-contrast !important;">
+					<p>Your browser does not support the canvas tag.</p>
+		</canvas>
+		
+		<div class="clear"></div>
+		<h2>#3 - Matrix</h2>
+		<canvas id="matrix" data-processing-sources='{% static "logo/js/track.pde" %}' width="400" height="100" tabindex="0" style="image-rendering: -webkit-optimize-contrast !important;">
+					<p>Your browser does not support the canvas tag.</p>
+		</canvas>
+		
+		<!--<div class="side-txt"><p>Big Data</p><p>&amp;</p><p>Society</p></div>-->
+			
+		
+		
+		
+		<script type="text/javascript">		
+		window.onload = function() {
+
+		  
+		  var gui = new dat.GUI();
+		  var c1 = gui.add(text, 'q1');
+		  var c2 = gui.add(text, 'q2');
+		  var c3 = gui.add(text, 'q3')
+		  var c4 = gui.add(text, 'q4');
+			
+		  c1.onFinishChange(update);
+		  c2.onFinishChange(update);
+		  c3.onFinishChange(update);
+		  c4.onFinishChange(update);
+		  
+		  update();
+		};
+		
+		
+		
+		var update = function() {
+			$.getJSON('http://mast26.indaco.polimi.it/logo/find?q='+text.q1+','+text.q2+","+text.q3+","+text.q4, function(data) {
+			console.log(data);
+			Processing.getInstanceById('trainglogo').updateLogo(data[text.q1],data[text.q2],data[text.q3],data[text.q4])
+			Processing.getInstanceById('matrix').updateLogo(data[text.q1],data[text.q2],data[text.q3],data[text.q4])
+			Processing.getInstanceById('lines').updateLogo(data[text.q1],data[text.q2],data[text.q3],data[text.q4])
+			Processing.getInstanceById('rays').updateLogo(data[text.q1],data[text.q2],data[text.q3],data[text.q4])
+			Processing.getInstanceById('squares').updateLogo(data[text.q1],data[text.q2],data[text.q3],data[text.q4])
+			});
+		}
+    
+</script>
 		
 		
 		

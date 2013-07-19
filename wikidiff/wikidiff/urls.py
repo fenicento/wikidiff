@@ -6,6 +6,7 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     url(r'^wikitoc/', include('wikitoc.urls')),
+    url(r'^logo/', include('logo.urls')),
     # Examples:
     # url(r'^$', 'wikidiff.views.home', name='home'),
     # url(r'^wikidiff/', include('wikidiff.foo.urls')),

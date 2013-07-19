@@ -205,7 +205,7 @@ CELERYBEAT_SCHEDULER = "djcelery.schedulers.DatabaseScheduler"
 CELERYBEAT_SCHEDULE = {
     "scrape-officials": {
         "task": "tasks.trends",
-        "schedule": timedelta(seconds=3000),
-        "args": ("big","data","society"),
+        "schedule": timedelta(seconds=30),
+        "args": ("big","data","society","research"),
     },
 }
