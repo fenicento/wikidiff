@@ -83,7 +83,7 @@ def scrapeTocs(voice,lang):
 			uni_t=tot_t/i;
 			rem_t=int(uni_t*(len(revisionsTot)-i))
 			rem_str="";
-			print rem_t
+			
 			if rem_t>3600:
 				h=int(rem_t/3600)
 				m=int(rem_t/60-h*60)
@@ -105,7 +105,7 @@ def scrapeTocs(voice,lang):
 			print "Unexpected error:", e
 	
 	res=compareTocs(lst,voice);
-	print res
+	
 	return res
 
 def revScraper(params, baseUrl):
@@ -129,13 +129,12 @@ def revScraper(params, baseUrl):
 				revision_size = revision['size']
 				revisionsTot.append([revision_id,revision_timestamp,revision_size])
 				
-				
 				#row = [revision_id, revision_timestamp]
 				#writer.writerow(row)
 		try:
 			rvcontinue = results['query-continue']['revisions']['rvcontinue']
 			params['rvcontinue'] = rvcontinue
-			revScraper(params)
+			revScraper(params,baseUrl)
 		except Exception, e:
 			print e, 'ho finito di cercare le revision ids'
 	

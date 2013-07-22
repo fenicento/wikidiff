@@ -11,7 +11,7 @@ var margin = {
 	top : 40,
 	right : 10,
 	bottom : 20,
-	left : 10
+	left : 0
 }, width = 1200 - margin.left - margin.right, height = dat.length * 40 + days*1.1 - margin.top - margin.bottom;
 
 var y2 = d3.scale.ordinal().domain(d3.range(n)).rangeRoundBands([2, height], .08);
@@ -71,7 +71,7 @@ var myrects = rect.append("rect")
 		return y2(d.y);
 	})
 	.attr("x", function(d) {
-		d.x=x(d.start) + rectpad * d.ind+70;
+		d.x=x(d.start) + rectpad * d.ind+30;
 		return d.x;
 	})
 	.attr("height", padheight)
@@ -103,13 +103,14 @@ function timeSpacing() {
 		});
 		prev=curr
 		
-		d3.select("svg").append('text')
-			.attr("class","date")
-			.attr("x",0)
-			.attr("y",prev+padheight/1.5)
-			.text(d.parentNode.__data__[0].ts);
+		// d3.select("svg").append('text')
+			// .attr("class","date")
+			// .attr("x",0)
+			// .attr("y",prev+padheight/1.5)
+			// .text(d.parentNode.__data__[0].ts);
 		
 	});
+	drawTimeline();
 }
 
 var text = layer.selectAll(".label")
@@ -119,7 +120,7 @@ var text = layer.selectAll(".label")
 .enter()
 .append("text")
 .attr("x", function(d) {
-	return x(d.start) +70+ rectpad * d.ind + 4
+	return x(d.start) +30+ rectpad * d.ind + 4
 })
 .attr("y", function(d) {
 	return d.h +6
@@ -297,6 +298,7 @@ function drawTimeline() {
 		bottom=ob.bottom;
 						
 		cur=d.parentNode.__data__[0];
+		console.log(cur.ts);
 		curtl=cur.ts.substr(0,7);
 		curmo=cur.ts.substr(5,2);
 		curyr=cur.ts.substr(0,4);
@@ -305,7 +307,7 @@ function drawTimeline() {
 		if(latl==curtl) {
 			
 			tl[curyr][curmo].bottom=bottom;
-			tl[curyr][curmo].bpad=30-curday;
+			tl[curyr][curmo].bpad=(curday)/4;
 			tl[curyr][curmo].els++;
 		}	
 		else {
@@ -315,8 +317,8 @@ function drawTimeline() {
 			if(tl[curyr]==null) tl[curyr]={};
 			tl[curyr][curmo]={};
 			tl[curyr][curmo].els=1;
-			tl[curyr][curmo].tpad=parseInt(curday,10);
-			tl[curyr][curmo].bpad=30-curday;
+			tl[curyr][curmo].tpad=(30-curday)/4;
+			tl[curyr][curmo].bpad=(curday)/4;
 			tl[curyr][curmo].tp=tp;
 			tl[curyr][curmo].bottom=bottom;
 			if(latl!="00") monthDelta(latl,curyr,curmo);
@@ -328,11 +330,8 @@ function drawTimeline() {
 	
 	obToAr(tl,"years",true);
 	
-	
-	for(var x = 0; x<tl.years.length; x++) {
-		
+	for(var x = 0; x<tl.years.length; x++) {	
 		obToAr(tl.years[x],"months",false);
-		
 	}
 	
 	
@@ -340,44 +339,73 @@ function drawTimeline() {
 	.data(tl.years)
 	.enter();
 	
-	
 	timeline[0].forEach(function(e,i,ar) {
 		
-		d3.select(e).datum().months.forEach(function(f,j,arr){
+		var bnm=0;
+		e.__data__.months.forEach(function(f,j,arr){
+			bnm++;
 			
-			console.log(f);
+			f.y=f.tp-f.tpad-119;
+			f.h=f.bottom+f.bpad-(f.tp-f.tpad);
+			
 			svg
+			.append("g")
+			.attr("class",e.__data__.id+" "+"box" )
 			.append("rect")
 			.attr("rx", 4)
 			.attr("ry", 4)
-			.attr("x", 27)
-			.attr("y",  f.tp-f.tpad-109)
-			.attr("width", 33)
-			.attr("height", f.bottom+f.bpad-f.tp-f.tpad)
+			.attr("x", 15)
+			.attr("y",  f.y)
+			.attr("width", 21)
+			.attr("height", f.h)
 			.style("stroke", "#ddd")
-			.style("fill", "#eee");
+			.style("fill", "#fff");
+			
+			svg
+			.append("g")
+			.attr("class",e.__data__.id+" "+"txt")
+			.append("text")
+			.text(f.id)
+			.attr("text-anchor", "middle")
+			.attr("x", 0)
+			.attr("y",0)
+			.attr("fill", "#bbb")
+			.attr("font-size", "10px")
+			.attr("transform", function(d) {return "translate(31,"+(f.y+f.h/2)+") rotate(-90)"});
+			
 			
 		});
 		
 	});
 	
 	timeline
+	.append("g").attr("class","tl")
 	.append("rect")
-	.attr("class","timeline")
 	.attr("x", 0)
-	.attr("y", function(d) {return d.months[d.months.length-1].tp-d.months[d.months.length-1].tpad-109})
-	.attr("width", 30)
-	.attr("height", function(d) {return d.months[0].bottom-d.months[d.months.length-1].tp})
+	.attr("y", function(d) {d.y=d.months[d.months.length-1].tp-d.months[d.months.length-1].tpad-119; return d.y})
+	.attr("width", 18)
+	.attr("height", function(d) {d.h=d.months[0].bottom+d.months[0].bpad-(d.months[d.months.length-1].tp-d.months[d.months.length-1].tpad); return d.h})
 	.style("stroke", "#ddd")
-	.style("fill", "#eee");
-
+	.style("fill", "#fff");
+	timeline
+	.append("text")
+	.text(function(d) {return d.id})
+	.attr("x", 0)
+	.attr("y", function(d) {return d.y+d.h/2})
+	.attr("fill", "#bbb")
+	.attr("transform", function(d) {return "rotate(-90 13,"+(d.y+d.h/2)+")"});
 }
 
 //delirio
 function monthDelta(latl, y,m) {
 	
+	
+	
 	lay=latl.substr(0,4);
 	lam=latl.substr(5,2);
+	
+	console.log(lay,y);
+	console.log(lam,m);
 	
 	dm=lam-m;
 	dy=lay-y;
@@ -389,10 +417,11 @@ function monthDelta(latl, y,m) {
 		deltad=ld.getMonth() - d.getMonth() + (12 * (ld.getFullYear() - d.getFullYear()));
 		laBottom=tl[lay][lam].bottom+tl[lay][lam].bpad;
 		cuTop=tl[y][m].tp-tl[y][m].tpad;
-		step=(cuTop-laBottom)/deltad;
+		step=(cuTop-laBottom)/(deltad-1);
 		
+		laBottom++;
 		
-		for(var i = 0; i <deltad; i++) {
+		for(var i = 0; i <(deltad-1); i++) {
 			
 			ld.setMonth(ld.getMonth()-1);
 			
@@ -402,8 +431,9 @@ function monthDelta(latl, y,m) {
 			tl[ld.getFullYear()][pad(ld.getMonth()+1)].els=0;
 			tl[ld.getFullYear()][pad(ld.getMonth()+1)].tpad=0;
 			tl[ld.getFullYear()][pad(ld.getMonth()+1)].bpad=0;
-			tl[ld.getFullYear()][pad(ld.getMonth()+1)].tp=laBottom+(i*step)+5;
-			tl[ld.getFullYear()][pad(ld.getMonth()+1)].bottom=laBottom+(i*step)+step-5;
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)].tp=laBottom+(i*step)+2;
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)].bottom=laBottom+(i*step)+step-2;
+			console.log(tl[ld.getFullYear()][pad(ld.getMonth()+1)]);
 		}
 	}
 	

@@ -11,7 +11,7 @@ curpath = os.path.abspath(os.curdir)
 
 def compareTocs2():
     
-    folder = curpath+"/wikitoc/scripts/Cascina_Torchiera/"
+    folder = curpath+"/wikitoc/scripts/Family_planning/"
     os.chdir(folder)
 
     listing = filter(os.path.isfile, os.listdir('.'))
