@@ -5,6 +5,7 @@ var n = dat.length, // number of layers
 xStackMax = longest, cautionPadding = longest/1.6, rectpad = 23, padheight = 30, hpadding=10, icowidth=50;
 
 var format = d3.time.format("%Y-%m-%d");
+var smallFormat = d3.time.format("%Y-%m");
 
 var margin = {
 	top : 40,
@@ -280,8 +281,165 @@ function seqOrder() {
 	
 }
 
+
+function drawTimeline() {
+	
+	window.tl={};
+	var latl="00";
+	var ofst=0;
+	
+	layer.selectAll("g").forEach(function(d, i, arr) {
+		
+		
+		
+		ob= d.parentNode.childNodes[0].getBoundingClientRect();
+		tp=ob.top;
+		bottom=ob.bottom;
+						
+		cur=d.parentNode.__data__[0];
+		curtl=cur.ts.substr(0,7);
+		curmo=cur.ts.substr(5,2);
+		curyr=cur.ts.substr(0,4);
+		curday=cur.ts.substr(8,2);
+		
+		if(latl==curtl) {
+			
+			tl[curyr][curmo].bottom=bottom;
+			tl[curyr][curmo].bpad=30-curday;
+			tl[curyr][curmo].els++;
+		}	
+		else {
+			
+			
+			//tl[curyr]="";
+			if(tl[curyr]==null) tl[curyr]={};
+			tl[curyr][curmo]={};
+			tl[curyr][curmo].els=1;
+			tl[curyr][curmo].tpad=parseInt(curday,10);
+			tl[curyr][curmo].bpad=30-curday;
+			tl[curyr][curmo].tp=tp;
+			tl[curyr][curmo].bottom=bottom;
+			if(latl!="00") monthDelta(latl,curyr,curmo);
+			
+		}
+		latl=curtl;
+	});
+	
+	
+	obToAr(tl,"years",true);
+	
+	
+	for(var x = 0; x<tl.years.length; x++) {
+		
+		obToAr(tl.years[x],"months",false);
+		
+	}
+	
+	
+	var timeline = svg.selectAll(".timeline")
+	.data(tl.years)
+	.enter()
+	.append("rect")
+	.attr("class","timeline")
+	.attr("x", 0)
+	.attr("y", function(d) {return d.months[d.months.length-1].tp-d.months[d.months.length-1].tpad-109})
+	.attr("width", 30)
+	.attr("height", function(d) {return d.months[0].bottom-d.months[d.months.length-1].tp})
+	.style("stroke", "#ddd")
+	.style("fill", "#eee");
+	
+	timeline[0].forEach(function(e,i,ar) {
+		
+		console.log(d3.select(e).datum(),i);
+		
+	});
+
+}
+
+//delirio
+function monthDelta(latl, y,m) {
+	
+	lay=latl.substr(0,4);
+	lam=latl.substr(5,2);
+	
+	dm=lam-m;
+	dy=lay-y;
+	
+	if(dm>1 || dy>1 || dy==1 && dm>-11) {
+		
+		ld=getSmallDate(latl);
+		d=getSmallDate(y+"-"+m);
+		deltad=ld.getMonth() - d.getMonth() + (12 * (ld.getFullYear() - d.getFullYear()));
+		laBottom=tl[lay][lam].bottom+tl[lay][lam].bpad;
+		cuTop=tl[y][m].tp-tl[y][m].tpad;
+		step=(cuTop-laBottom)/deltad;
+		
+		
+		for(var i = 0; i <deltad; i++) {
+			
+			ld.setMonth(ld.getMonth()-1);
+			
+			if(tl[ld.getFullYear()]==null) tl[ld.getFullYear()]={};
+			
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)]={};			
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)].els=0;
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)].tpad=0;
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)].bpad=0;
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)].tp=laBottom+(i*step)+5;
+			tl[ld.getFullYear()][pad(ld.getMonth()+1)].bottom=laBottom+(i*step)+step-5;
+		}
+	}
+	
+	laobj=tl[lay][lam];
+	cuobj=tl[y][m];
+	
+}
+
 function getDate(d) {
 	return new Date(format.parse(d));
+}
+
+function getSmallDate(d) {
+	return new Date(smallFormat.parse(d));
+}
+
+function pad(n) {
+    return (n < 10) ? ("0" + n) : n;
+}
+
+function obToAr(o,name,years) {
+	
+	arr=[];
+	ids=[];
+
+	for (var i in o) {
+		if(i!="id"){
+    	arr.push(o[i]);
+    	ids.push(i);
+    	//o[i].id=i;
+    	delete o[i];
+    }
+  }
+  
+	
+
+  for(var x=0; x<arr.length; x++) {
+  	
+  	arr[x].id=ids[x];
+ 	if (years) {
+ 		
+ 	} 	
+  }
+  
+  arr.sort(function(a,b) {
+		
+		if (a.id>b.id) return 1;
+		else if (a.id<b.id) return -1;
+		else return 0;
+		
+	});
+  
+  o[name]=arr;
 }
 
 $("svg").prepend($("defs")[0]);
