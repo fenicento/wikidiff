@@ -338,7 +338,30 @@ function drawTimeline() {
 	
 	var timeline = svg.selectAll(".timeline")
 	.data(tl.years)
-	.enter()
+	.enter();
+	
+	
+	timeline[0].forEach(function(e,i,ar) {
+		
+		d3.select(e).datum().months.forEach(function(f,j,arr){
+			
+			console.log(f);
+			svg
+			.append("rect")
+			.attr("rx", 4)
+			.attr("ry", 4)
+			.attr("x", 27)
+			.attr("y",  f.tp-f.tpad-109)
+			.attr("width", 33)
+			.attr("height", f.bottom+f.bpad-f.tp-f.tpad)
+			.style("stroke", "#ddd")
+			.style("fill", "#eee");
+			
+		});
+		
+	});
+	
+	timeline
 	.append("rect")
 	.attr("class","timeline")
 	.attr("x", 0)
@@ -347,12 +370,6 @@ function drawTimeline() {
 	.attr("height", function(d) {return d.months[0].bottom-d.months[d.months.length-1].tp})
 	.style("stroke", "#ddd")
 	.style("fill", "#eee");
-	
-	timeline[0].forEach(function(e,i,ar) {
-		
-		console.log(d3.select(e).datum(),i);
-		
-	});
 
 }
 
