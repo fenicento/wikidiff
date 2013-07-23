@@ -1,0 +1,278 @@
+{
+    "timestamp": "2009-07-06T03:55:52Z", 
+    "size": 54672, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1931, 
+            "line": "History", 
+            "anchor": "History"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 15272, 
+            "line": "Methods", 
+            "anchor": "Methods"
+        }, 
+        {
+            "index": "3", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 15334, 
+            "line": "Physical methods", 
+            "anchor": "Physical_methods"
+        }, 
+        {
+            "index": "4", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.1.1", 
+            "byteoffset": 15825, 
+            "line": "Barrier methods", 
+            "anchor": "Barrier_methods"
+        }, 
+        {
+            "index": "5", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.1.2", 
+            "byteoffset": 17069, 
+            "line": "Hormonal methods", 
+            "anchor": "Hormonal_methods"
+        }, 
+        {
+            "index": "6", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.1.3", 
+            "byteoffset": 19016, 
+            "line": "Ormeloxifene (Centchroman)", 
+            "anchor": "Ormeloxifene_.28Centchroman.29"
+        }, 
+        {
+            "index": "7", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.1.4", 
+            "byteoffset": 19462, 
+            "line": "Emergency contraception", 
+            "anchor": "Emergency_contraception"
+        }, 
+        {
+            "index": "8", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.1.5", 
+            "byteoffset": 22201, 
+            "line": "Intrauterine methods", 
+            "anchor": "Intrauterine_methods"
+        }, 
+        {
+            "index": "9", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.1.6", 
+            "byteoffset": 23703, 
+            "line": "Sterilization", 
+            "anchor": "Sterilization"
+        }, 
+        {
+            "index": "10", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.2", 
+            "byteoffset": 24630, 
+            "line": "Behavioral methods", 
+            "anchor": "Behavioral_methods"
+        }, 
+        {
+            "index": "11", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.1", 
+            "byteoffset": 24854, 
+            "line": "Fertility awareness", 
+            "anchor": "Fertility_awareness"
+        }, 
+        {
+            "index": "12", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.2", 
+            "byteoffset": 26602, 
+            "line": "Coitus interruptus", 
+            "anchor": "Coitus_interruptus"
+        }, 
+        {
+            "index": "13", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.3", 
+            "byteoffset": 27167, 
+            "line": "Avoiding vaginal intercourse", 
+            "anchor": "Avoiding_vaginal_intercourse"
+        }, 
+        {
+            "index": "14", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.4", 
+            "byteoffset": 28162, 
+            "line": "Lactational", 
+            "anchor": "Lactational"
+        }, 
+        {
+            "index": "15", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.3", 
+            "byteoffset": 28410, 
+            "line": "Induced abortion", 
+            "anchor": "Induced_abortion"
+        }, 
+        {
+            "index": "16", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.4", 
+            "byteoffset": 30950, 
+            "line": "Methods in development", 
+            "anchor": "Methods_in_development"
+        }, 
+        {
+            "index": "17", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.4.1", 
+            "byteoffset": 30979, 
+            "line": "For females", 
+            "anchor": "For_females"
+        }, 
+        {
+            "index": "18", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.4.2", 
+            "byteoffset": 34115, 
+            "line": "For males", 
+            "anchor": "For_males"
+        }, 
+        {
+            "index": "19", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 35374, 
+            "line": "Misconceptions", 
+            "anchor": "Misconceptions"
+        }, 
+        {
+            "index": "20", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 39091, 
+            "line": "Effectiveness", 
+            "anchor": "Effectiveness"
+        }, 
+        {
+            "index": "21", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.1", 
+            "byteoffset": 43244, 
+            "line": "Protection against sexually transmitted infections", 
+            "anchor": "Protection_against_sexually_transmitted_infections"
+        }, 
+        {
+            "index": "22", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 45449, 
+            "line": "Religious and cultural attitudes", 
+            "anchor": "Religious_and_cultural_attitudes"
+        }, 
+        {
+            "index": "23", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "5.1", 
+            "byteoffset": 45486, 
+            "line": "Religious views on birth control", 
+            "anchor": "Religious_views_on_birth_control"
+        }, 
+        {
+            "index": "24", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "5.2", 
+            "byteoffset": 47926, 
+            "line": "Birth control education", 
+            "anchor": "Birth_control_education"
+        }, 
+        {
+            "index": "25", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "6", 
+            "byteoffset": 52361, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }, 
+        {
+            "index": "26", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "7", 
+            "byteoffset": 52460, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "27", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "8", 
+            "byteoffset": 52502, 
+            "line": "External links", 
+            "anchor": "External_links"
+        }
+    ], 
+    "revid": 300530239, 
+    "title": "Birth control"
+}

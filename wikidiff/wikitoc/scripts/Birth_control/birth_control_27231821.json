@@ -1,0 +1,108 @@
+{
+    "timestamp": "2005-11-03T06:29:03Z", 
+    "size": 26908, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1600, 
+            "line": "History of birth control", 
+            "anchor": "History_of_birth_control"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 7569, 
+            "line": "Traditional birth control methods", 
+            "anchor": "Traditional_birth_control_methods"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 7955, 
+            "line": "Modern birth control methods", 
+            "anchor": "Modern_birth_control_methods"
+        }, 
+        {
+            "index": "4", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 9768, 
+            "line": "Religious and cultural attitudes toward birth control", 
+            "anchor": "Religious_and_cultural_attitudes_toward_birth_control"
+        }, 
+        {
+            "index": "5", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.1", 
+            "byteoffset": 9827, 
+            "line": "Protestant Christianity", 
+            "anchor": "Protestant_Christianity"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.2", 
+            "byteoffset": 11850, 
+            "line": "Catholic Christianity", 
+            "anchor": "Catholic_Christianity"
+        }, 
+        {
+            "index": "7", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.3", 
+            "byteoffset": 19736, 
+            "line": "Islam", 
+            "anchor": "Islam"
+        }, 
+        {
+            "index": "8", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.4", 
+            "byteoffset": 21259, 
+            "line": "Judaism", 
+            "anchor": "Judaism"
+        }, 
+        {
+            "index": "9", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 25134, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "10", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "6", 
+            "byteoffset": 25552, 
+            "line": "External links", 
+            "anchor": "External_links"
+        }
+    ], 
+    "revid": 27231821, 
+    "title": "Birth control"
+}

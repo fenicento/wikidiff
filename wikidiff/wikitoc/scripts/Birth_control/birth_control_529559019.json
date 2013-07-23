@@ -1,0 +1,498 @@
+{
+    "timestamp": "2012-12-24T07:21:20Z", 
+    "size": 118748, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 4399, 
+            "line": "Methods", 
+            "anchor": "Methods"
+        }, 
+        {
+            "index": "2", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "1.1", 
+            "byteoffset": 7435, 
+            "line": "Barrier", 
+            "anchor": "Barrier"
+        }, 
+        {
+            "index": "3", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "1.2", 
+            "byteoffset": 9494, 
+            "line": "Hormonal", 
+            "anchor": "Hormonal"
+        }, 
+        {
+            "index": "4", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "1.3", 
+            "byteoffset": 15217, 
+            "line": "Intrauterine devices", 
+            "anchor": "Intrauterine_devices"
+        }, 
+        {
+            "index": "5", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "1.4", 
+            "byteoffset": 18270, 
+            "line": "Sterilization", 
+            "anchor": "Sterilization"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "1.5", 
+            "byteoffset": 19412, 
+            "line": "Behavioral", 
+            "anchor": "Behavioral"
+        }, 
+        {
+            "index": "7", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "1.5.1", 
+            "byteoffset": 19691, 
+            "line": "Lactational", 
+            "anchor": "Lactational"
+        }, 
+        {
+            "index": "8", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "1.5.2", 
+            "byteoffset": 21236, 
+            "line": "Fertility awareness", 
+            "anchor": "Fertility_awareness"
+        }, 
+        {
+            "index": "9", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "1.5.3", 
+            "byteoffset": 25612, 
+            "line": "Withdrawal", 
+            "anchor": "Withdrawal"
+        }, 
+        {
+            "index": "10", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "1.5.4", 
+            "byteoffset": 27053, 
+            "line": "Abstinence", 
+            "anchor": "Abstinence"
+        }, 
+        {
+            "index": "11", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "1.6", 
+            "byteoffset": 30640, 
+            "line": "Emergency (after sex)", 
+            "anchor": "Emergency_.28after_sex.29"
+        }, 
+        {
+            "index": "12", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 34743, 
+            "line": "Effectiveness", 
+            "anchor": "Effectiveness"
+        }, 
+        {
+            "index": "13", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 43239, 
+            "line": "Dual protection", 
+            "anchor": "Dual_protection"
+        }, 
+        {
+            "index": "14", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.2", 
+            "byteoffset": 45453, 
+            "line": "Health", 
+            "anchor": "Health"
+        }, 
+        {
+            "index": "15", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.3", 
+            "byteoffset": 48044, 
+            "line": "Finances", 
+            "anchor": "Finances"
+        }, 
+        {
+            "index": "16", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.4", 
+            "byteoffset": 50803, 
+            "line": "Misconceptions", 
+            "anchor": "Misconceptions"
+        }, 
+        {
+            "index": "17", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 54149, 
+            "line": "Prevalence", 
+            "anchor": "Prevalence"
+        }, 
+        {
+            "index": "18", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "3.1", 
+            "byteoffset": 54896, 
+            "line": "Developing countries", 
+            "anchor": "Developing_countries"
+        }, 
+        {
+            "index": "19", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "3.1.1", 
+            "byteoffset": 55227, 
+            "line": "Africa", 
+            "anchor": "Africa"
+        }, 
+        {
+            "index": "20", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "3.1.2", 
+            "byteoffset": 56083, 
+            "line": "China", 
+            "anchor": "China"
+        }, 
+        {
+            "index": "21", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "3.1.3", 
+            "byteoffset": 57796, 
+            "line": "India", 
+            "anchor": "India"
+        }, 
+        {
+            "index": "22", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "3.1.4", 
+            "byteoffset": 59287, 
+            "line": "Pakistan", 
+            "anchor": "Pakistan"
+        }, 
+        {
+            "index": "23", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "3.2", 
+            "byteoffset": 61345, 
+            "line": "Industrialized countries", 
+            "anchor": "Industrialized_countries"
+        }, 
+        {
+            "index": "24", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "3.2.1", 
+            "byteoffset": 61377, 
+            "line": "United Kingdom", 
+            "anchor": "United_Kingdom"
+        }, 
+        {
+            "index": "25", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "3.2.2", 
+            "byteoffset": 62914, 
+            "line": "United States", 
+            "anchor": "United_States"
+        }, 
+        {
+            "index": "26", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 65466, 
+            "line": "History", 
+            "anchor": "History"
+        }, 
+        {
+            "index": "27", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.1", 
+            "byteoffset": 65594, 
+            "line": "Up to the 19th century", 
+            "anchor": "Up_to_the_19th_century"
+        }, 
+        {
+            "index": "28", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "4.1.1", 
+            "byteoffset": 65624, 
+            "line": "Ancient Mesopotamia, Egypt and Rome", 
+            "anchor": "Ancient_Mesopotamia.2C_Egypt_and_Rome"
+        }, 
+        {
+            "index": "29", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "4.1.2", 
+            "byteoffset": 68576, 
+            "line": "Religious texts", 
+            "anchor": "Religious_texts"
+        }, 
+        {
+            "index": "30", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "4.1.3", 
+            "byteoffset": 69475, 
+            "line": "Ancient China", 
+            "anchor": "Ancient_China"
+        }, 
+        {
+            "index": "31", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "4.1.4", 
+            "byteoffset": 70123, 
+            "line": "India", 
+            "anchor": "India_2"
+        }, 
+        {
+            "index": "32", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "4.1.5", 
+            "byteoffset": 70646, 
+            "line": "Early Islam", 
+            "anchor": "Early_Islam"
+        }, 
+        {
+            "index": "33", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "4.1.6", 
+            "byteoffset": 71928, 
+            "line": "Middle ages through industrialization", 
+            "anchor": "Middle_ages_through_industrialization"
+        }, 
+        {
+            "index": "34", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.2", 
+            "byteoffset": 77730, 
+            "line": "Birth control movement", 
+            "anchor": "Birth_control_movement"
+        }, 
+        {
+            "index": "35", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.3", 
+            "byteoffset": 85584, 
+            "line": "Late 20th century", 
+            "anchor": "Late_20th_century"
+        }, 
+        {
+            "index": "36", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 89003, 
+            "line": "Society and culture", 
+            "anchor": "Society_and_culture"
+        }, 
+        {
+            "index": "37", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "5.1", 
+            "byteoffset": 89329, 
+            "line": "Public policy", 
+            "anchor": "Public_policy"
+        }, 
+        {
+            "index": "38", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "5.1.1", 
+            "byteoffset": 91306, 
+            "line": "International law", 
+            "anchor": "International_law"
+        }, 
+        {
+            "index": "39", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "5.1.2", 
+            "byteoffset": 95640, 
+            "line": "Sex education", 
+            "anchor": "Sex_education"
+        }, 
+        {
+            "index": "40", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "5.2", 
+            "byteoffset": 99505, 
+            "line": "Cultural attitudes", 
+            "anchor": "Cultural_attitudes"
+        }, 
+        {
+            "index": "41", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "5.3", 
+            "byteoffset": 101638, 
+            "line": "Religious views", 
+            "anchor": "Religious_views"
+        }, 
+        {
+            "index": "42", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "5.4", 
+            "byteoffset": 105822, 
+            "line": "World Contraception Day", 
+            "anchor": "World_Contraception_Day"
+        }, 
+        {
+            "index": "43", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "6", 
+            "byteoffset": 106834, 
+            "line": "Research", 
+            "anchor": "Research"
+        }, 
+        {
+            "index": "44", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "6.1", 
+            "byteoffset": 107234, 
+            "line": "Females", 
+            "anchor": "Females"
+        }, 
+        {
+            "index": "45", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "6.2", 
+            "byteoffset": 110883, 
+            "line": "Males", 
+            "anchor": "Males"
+        }, 
+        {
+            "index": "46", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "6.3", 
+            "byteoffset": 113663, 
+            "line": "Other animals", 
+            "anchor": "Other_animals"
+        }, 
+        {
+            "index": "47", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "7", 
+            "byteoffset": 114244, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "48", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "8", 
+            "byteoffset": 114287, 
+            "line": "Further reading", 
+            "anchor": "Further_reading"
+        }, 
+        {
+            "index": "49", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "9", 
+            "byteoffset": 116202, 
+            "line": "External links", 
+            "anchor": "External_links"
+        }
+    ], 
+    "revid": 529559019, 
+    "title": "Birth control"
+}

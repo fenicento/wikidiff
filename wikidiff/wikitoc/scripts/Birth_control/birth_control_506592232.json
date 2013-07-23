@@ -1,0 +1,98 @@
+{
+    "timestamp": "2012-08-09T17:54:07Z", 
+    "size": 83339, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1230, 
+            "line": "Definition", 
+            "anchor": "Definition"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 8672, 
+            "line": "Methods", 
+            "anchor": "Methods"
+        }, 
+        {
+            "index": "3", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 9930, 
+            "line": "Sterilization", 
+            "anchor": "Sterilization"
+        }, 
+        {
+            "index": "4", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.2", 
+            "byteoffset": 10615, 
+            "line": "Behavioral methods", 
+            "anchor": "Behavioral_methods"
+        }, 
+        {
+            "index": "5", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.1", 
+            "byteoffset": 10880, 
+            "line": "Lactational", 
+            "anchor": "Lactational"
+        }, 
+        {
+            "index": "6", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.2", 
+            "byteoffset": 11171, 
+            "line": "Fertility awareness", 
+            "anchor": "Fertility_awareness"
+        }, 
+        {
+            "index": "7", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.3", 
+            "byteoffset": 12767, 
+            "line": "Coitus interruptus", 
+            "anchor": "Coitus_interruptus"
+        }, 
+        {
+            "index": "8", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.4", 
+            "byteoffset": 13881, 
+            "line": "Avoiding semen near vagina", 
+            "anchor": "Avoiding_semen_near_vagina"
+        }, 
+        {
+            "index": "9", 
+            "level": "4", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 3, 
+            "number": "2.2.5", 
+            "byteoffset": 14291, 
+            "line": "Sexual abstinence", 
+            "anchor": "Sexual_abstinence"
+        }
+    ], 
+    "revid": 506592232, 
+    "title": "Birth control"
+}

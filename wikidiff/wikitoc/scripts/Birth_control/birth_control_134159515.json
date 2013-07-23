@@ -1,0 +1,108 @@
+{
+    "timestamp": "2007-05-28T20:54:04Z", 
+    "size": 24558, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 500, 
+            "line": "History", 
+            "anchor": "History"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 9160, 
+            "line": "Misconceptions", 
+            "anchor": "Misconceptions"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 12402, 
+            "line": "Effectiveness", 
+            "anchor": "Effectiveness"
+        }, 
+        {
+            "index": "4", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "3.1", 
+            "byteoffset": 16267, 
+            "line": "Protection against sexually transmitted infections", 
+            "anchor": "Protection_against_sexually_transmitted_infections"
+        }, 
+        {
+            "index": "5", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 18241, 
+            "line": "Religious and cultural attitudes", 
+            "anchor": "Religious_and_cultural_attitudes"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.1", 
+            "byteoffset": 18278, 
+            "line": "Religious views on birth control", 
+            "anchor": "Religious_views_on_birth_control"
+        }, 
+        {
+            "index": "7", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.2", 
+            "byteoffset": 20276, 
+            "line": "Birth control education", 
+            "anchor": "Birth_control_education"
+        }, 
+        {
+            "index": "8", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 22159, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }, 
+        {
+            "index": "9", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "6", 
+            "byteoffset": 22247, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "10", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "7", 
+            "byteoffset": 22278, 
+            "line": "External links", 
+            "anchor": "External_links"
+        }
+    ], 
+    "revid": 134159515, 
+    "title": "Birth control"
+}

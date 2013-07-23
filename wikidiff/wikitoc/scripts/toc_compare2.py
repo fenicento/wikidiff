@@ -9,9 +9,9 @@ import urllib
 
 curpath = os.path.abspath(os.curdir)
 
-def compareTocs2():
+def compareTocs2(voice):
     
-    folder = curpath+"/wikitoc/scripts/Family_planning/"
+    folder = curpath+"/wikitoc/scripts/"+voice+"/"
     os.chdir(folder)
 
     listing = filter(os.path.isfile, os.listdir('.'))

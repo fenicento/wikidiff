@@ -6,13 +6,18 @@ xStackMax = longest, cautionPadding = longest/1.6, rectpad = 23, padheight = 30,
 
 var format = d3.time.format("%Y-%m-%d");
 var smallFormat = d3.time.format("%Y-%m");
+var inWidth=1200;
+
+widthAdd=0;
+
+if(n>100) widthAdd=1000;
 
 var margin = {
 	top : 40,
 	right : 10,
 	bottom : 20,
 	left : 0
-}, width = 1200 - margin.left - margin.right, height = dat.length * 40 + days*1.1 - margin.top - margin.bottom;
+}, width = inWidth - margin.left - margin.right, height = dat.length * 40 + days*1.1 - margin.top - margin.bottom;
 
 var y2 = d3.scale.ordinal().domain(d3.range(n)).rangeRoundBands([2, height], .08);
 
@@ -20,7 +25,7 @@ var x = d3.scale.linear().domain([0, xStackMax + cautionPadding]).range([20, wid
 
 var y = d3.time.scale().domain([getDate(oldest), getDate(newest)]).rangeRound([0, height - 20]);
 
-var svg = d3.select("#graph").append("svg").attr("width", width + margin.left + margin.right+200).attr("height", height + margin.top + margin.bottom)
+var svg = d3.select("#graph").append("svg").attr("width", width + widthAdd + margin.left + margin.right+200).attr("height", height + margin.top + margin.bottom)
 .on("click",deselect)
 .append("g")
 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -345,7 +350,7 @@ function drawTimeline() {
 		e.__data__.months.forEach(function(f,j,arr){
 			bnm++;
 			
-			f.y=f.tp-f.tpad-119;
+			f.y=f.tp-f.tpad-119-$(window).scrollTop();
 			f.h=f.bottom+f.bpad-(f.tp-f.tpad);
 			
 			svg

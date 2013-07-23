@@ -206,8 +206,10 @@ def comparator(x, y):
     print d.seconds
     return int(d.total_seconds())
 
-def example(request):
-    lst=compareTocs2()
+def example(request, voice):
+    
+    lst=compareTocs2(voice)
+    voice.replace("_"," ")
     res,longest,oldest,newest,overlapping=formatData2(lst)
     params={
             'list':lst,
@@ -216,7 +218,7 @@ def example(request):
             'oldest':oldest,
             'newest':newest,
             'days':overlapping,
-            'voice': "Family Planning"
+            'voice': voice
             }
    
     return render_to_response('wikitoc/example.html',params)

@@ -1,0 +1,98 @@
+{
+    "timestamp": "2006-05-30T20:40:35Z", 
+    "size": 20433, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 8463, 
+            "line": "Birth control methods", 
+            "anchor": "Birth_control_methods"
+        }, 
+        {
+            "index": "2", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "1.1", 
+            "byteoffset": 10173, 
+            "line": "Protection against sexually-transmitted infections", 
+            "anchor": "Protection_against_sexually-transmitted_infections"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 12043, 
+            "line": "Religious and cultural attitudes toward birth control", 
+            "anchor": "Religious_and_cultural_attitudes_toward_birth_control"
+        }, 
+        {
+            "index": "4", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 12101, 
+            "line": "Christianity", 
+            "anchor": "Christianity"
+        }, 
+        {
+            "index": "5", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.2", 
+            "byteoffset": 13207, 
+            "line": "Islam", 
+            "anchor": "Islam"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "2.3", 
+            "byteoffset": 14793, 
+            "line": "Judaism", 
+            "anchor": "Judaism"
+        }, 
+        {
+            "index": "7", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 18674, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }, 
+        {
+            "index": "8", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 18712, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "9", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 18743, 
+            "line": "External links", 
+            "anchor": "External_links"
+        }
+    ], 
+    "revid": 55997174, 
+    "title": "Birth control"
+}

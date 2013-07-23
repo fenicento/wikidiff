@@ -6,6 +6,7 @@ body
 .container{
 	min-height:100%;
    position:relative;
+   margin-left:10% !important;
 }
 
 footer{

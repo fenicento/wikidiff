@@ -1,0 +1,88 @@
+{
+    "timestamp": "2004-10-01T14:39:35Z", 
+    "size": 15342, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 851, 
+            "line": "History of birth control", 
+            "anchor": "History_of_birth_control"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 6211, 
+            "line": "Traditional birth control methods", 
+            "anchor": "Traditional_birth_control_methods"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 6551, 
+            "line": "Modern birth control methods", 
+            "anchor": "Modern_birth_control_methods"
+        }, 
+        {
+            "index": "4", 
+            "level": "2", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 7358, 
+            "line": "Religious and cultural attitudes to birth control", 
+            "anchor": "Religious_and_cultural_attitudes_to_birth_control"
+        }, 
+        {
+            "index": "5", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.1", 
+            "byteoffset": 7413, 
+            "line": "Christianity", 
+            "anchor": "Christianity"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.2", 
+            "byteoffset": 8179, 
+            "line": "Catholicism", 
+            "anchor": "Catholicism"
+        }, 
+        {
+            "index": "7", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.3", 
+            "byteoffset": 12058, 
+            "line": "Islam", 
+            "anchor": "Islam"
+        }, 
+        {
+            "index": "8", 
+            "level": "3", 
+            "fromtitle": "Birth_control", 
+            "toclevel": 2, 
+            "number": "4.4", 
+            "byteoffset": 12859, 
+            "line": "Judaism", 
+            "anchor": "Judaism"
+        }
+    ], 
+    "revid": 6474172, 
+    "title": "Birth control"
+}

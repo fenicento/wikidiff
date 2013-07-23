@@ -1,0 +1,48 @@
+{
+    "timestamp": "2002-03-15T08:02:11Z", 
+    "size": 1627, 
+    "sections": [
+        {
+            "index": "", 
+            "level": "3", 
+            "fromtitle": false, 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1588, 
+            "line": "History of Birth Control", 
+            "anchor": "History_of_Birth_Control"
+        }, 
+        {
+            "index": "", 
+            "level": "3", 
+            "fromtitle": false, 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 1588, 
+            "line": "Traditional Birth Control Methods:", 
+            "anchor": "Traditional_Birth_Control_Methods:"
+        }, 
+        {
+            "index": "", 
+            "level": "3", 
+            "fromtitle": false, 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 1588, 
+            "line": "Modern Birth Control Methods:", 
+            "anchor": "Modern_Birth_Control_Methods:"
+        }, 
+        {
+            "index": "", 
+            "level": "3", 
+            "fromtitle": false, 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 1588, 
+            "line": "Religious and Cultural Attitudes to Birth Control", 
+            "anchor": "Religious_and_Cultural_Attitudes_to_Birth_Control"
+        }
+    ], 
+    "revid": 30458, 
+    "title": "Birth control"
+}
