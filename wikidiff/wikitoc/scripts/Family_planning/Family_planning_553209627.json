@@ -1,0 +1,228 @@
+{
+    "timestamp": "2013-05-02T15:29:28Z", 
+    "size": 28872, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 2444, 
+            "line": "Purposes", 
+            "anchor": "Purposes"
+        }, 
+        {
+            "index": "2", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "1.1", 
+            "byteoffset": 3550, 
+            "line": "Health", 
+            "anchor": "Health"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 5377, 
+            "line": "Modern methods", 
+            "anchor": "Modern_methods"
+        }, 
+        {
+            "index": "4", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 6530, 
+            "line": "Birth control", 
+            "anchor": "Birth_control"
+        }, 
+        {
+            "index": "5", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.2", 
+            "byteoffset": 8001, 
+            "line": "Assisted reproductive technology", 
+            "anchor": "Assisted_reproductive_technology"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.3", 
+            "byteoffset": 10136, 
+            "line": "Finances", 
+            "anchor": "Finances"
+        }, 
+        {
+            "index": "7", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 11904, 
+            "line": "Policy", 
+            "anchor": "Policy"
+        }, 
+        {
+            "index": "8", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.1", 
+            "byteoffset": 13423, 
+            "line": "China", 
+            "anchor": "China"
+        }, 
+        {
+            "index": "9", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.2", 
+            "byteoffset": 16226, 
+            "line": "Hong Kong", 
+            "anchor": "Hong_Kong"
+        }, 
+        {
+            "index": "10", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.3", 
+            "byteoffset": 17314, 
+            "line": "India", 
+            "anchor": "India"
+        }, 
+        {
+            "index": "11", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.4", 
+            "byteoffset": 17361, 
+            "line": "Iran", 
+            "anchor": "Iran"
+        }, 
+        {
+            "index": "12", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.5", 
+            "byteoffset": 17406, 
+            "line": "Ireland", 
+            "anchor": "Ireland"
+        }, 
+        {
+            "index": "13", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.6", 
+            "byteoffset": 18614, 
+            "line": "Pakistan", 
+            "anchor": "Pakistan"
+        }, 
+        {
+            "index": "14", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.7", 
+            "byteoffset": 19948, 
+            "line": "Russia", 
+            "anchor": "Russia"
+        }, 
+        {
+            "index": "15", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.8", 
+            "byteoffset": 20871, 
+            "line": "Philippines", 
+            "anchor": "Philippines"
+        }, 
+        {
+            "index": "16", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.9", 
+            "byteoffset": 20928, 
+            "line": "Singapore", 
+            "anchor": "Singapore"
+        }, 
+        {
+            "index": "17", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.10", 
+            "byteoffset": 20983, 
+            "line": "United Kingdom", 
+            "anchor": "United_Kingdom"
+        }, 
+        {
+            "index": "18", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.11", 
+            "byteoffset": 22526, 
+            "line": "United States", 
+            "anchor": "United_States"
+        }, 
+        {
+            "index": "19", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 25556, 
+            "line": "World Contraception Day", 
+            "anchor": "World_Contraception_Day"
+        }, 
+        {
+            "index": "20", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 26565, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }, 
+        {
+            "index": "21", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "6", 
+            "byteoffset": 27633, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "22", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "7", 
+            "byteoffset": 27663, 
+            "line": "External links", 
+            "anchor": "External_links"
+        }
+    ], 
+    "revid": 553209627, 
+    "title": "Family planning"
+}

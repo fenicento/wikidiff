@@ -1,0 +1,98 @@
+{
+    "timestamp": "2009-02-17T13:34:38Z", 
+    "size": 8935, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1648, 
+            "line": "Definitions", 
+            "anchor": "Definitions"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 2097, 
+            "line": "Planning Children", 
+            "anchor": "Planning_Children"
+        }, 
+        {
+            "index": "3", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 3120, 
+            "line": "Finances", 
+            "anchor": "Finances"
+        }, 
+        {
+            "index": "4", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 4368, 
+            "line": "Policy", 
+            "anchor": "Policy"
+        }, 
+        {
+            "index": "5", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.1", 
+            "byteoffset": 5906, 
+            "line": "China", 
+            "anchor": "China"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.2", 
+            "byteoffset": 6535, 
+            "line": "United States", 
+            "anchor": "United_States"
+        }, 
+        {
+            "index": "7", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.3", 
+            "byteoffset": 7365, 
+            "line": "Iran", 
+            "anchor": "Iran"
+        }, 
+        {
+            "index": "8", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 7517, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "9", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 7545, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 271336196, 
+    "title": "Family planning"
+}

@@ -1,0 +1,38 @@
+{
+    "timestamp": "2008-01-23T16:09:02Z", 
+    "size": 3079, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 753, 
+            "line": "Family Planning Policy in the United States", 
+            "anchor": "Family_Planning_Policy_in_the_United_States"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 2429, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 2457, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 186363092, 
+    "title": "Family planning"
+}

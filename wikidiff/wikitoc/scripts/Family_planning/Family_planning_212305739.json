@@ -1,0 +1,128 @@
+{
+    "timestamp": "2008-05-14T08:06:36Z", 
+    "size": 9017, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1682, 
+            "line": "Definitions", 
+            "anchor": "Definitions"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 2117, 
+            "line": "Planning Children", 
+            "anchor": "Planning_Children"
+        }, 
+        {
+            "index": "3", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 2394, 
+            "line": "Planning for Health", 
+            "anchor": "Planning_for_Health"
+        }, 
+        {
+            "index": "4", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.2", 
+            "byteoffset": 3062, 
+            "line": "Finances", 
+            "anchor": "Finances"
+        }, 
+        {
+            "index": "5", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 4294, 
+            "line": "Policy", 
+            "anchor": "Policy"
+        }, 
+        {
+            "index": "6", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.1", 
+            "byteoffset": 4306, 
+            "line": "International", 
+            "anchor": "International"
+        }, 
+        {
+            "index": "7", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.2", 
+            "byteoffset": 5106, 
+            "line": "China", 
+            "anchor": "China"
+        }, 
+        {
+            "index": "8", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.3", 
+            "byteoffset": 5710, 
+            "line": "United States", 
+            "anchor": "United_States"
+        }, 
+        {
+            "index": "9", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "3.4", 
+            "byteoffset": 7841, 
+            "line": "Other", 
+            "anchor": "Other"
+        }, 
+        {
+            "index": "10", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 7994, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "11", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "5", 
+            "byteoffset": 8022, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }, 
+        {
+            "index": "12", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "6", 
+            "byteoffset": 8233, 
+            "line": "External links", 
+            "anchor": "External_links"
+        }
+    ], 
+    "revid": 212305739, 
+    "title": "Family planning"
+}

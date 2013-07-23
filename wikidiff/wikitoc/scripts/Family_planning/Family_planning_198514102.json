@@ -1,0 +1,58 @@
+{
+    "timestamp": "2008-03-15T23:44:51Z", 
+    "size": 4124, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1321, 
+            "line": "Definitions", 
+            "anchor": "Definitions"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 1756, 
+            "line": "Policy", 
+            "anchor": "Policy"
+        }, 
+        {
+            "index": "3", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 1768, 
+            "line": "United States", 
+            "anchor": "United_States"
+        }, 
+        {
+            "index": "4", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 3415, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "5", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 3443, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 198514102, 
+    "title": "Family planning"
+}

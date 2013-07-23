@@ -1,0 +1,38 @@
+{
+    "timestamp": "2008-02-17T02:33:28Z", 
+    "size": 3073, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 750, 
+            "line": "Family Planning Policy in the Philippines", 
+            "anchor": "Family_Planning_Policy_in_the_Philippines"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 2423, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 2451, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 191980923, 
+    "title": "Family planning"
+}

@@ -1,0 +1,88 @@
+{
+    "timestamp": "2007-01-03T04:40:04Z", 
+    "size": 4103, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1809, 
+            "line": "Components of Family Planning", 
+            "anchor": "Components_of_Family_Planning"
+        }, 
+        {
+            "index": "2", 
+            "level": "4", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "1.1", 
+            "byteoffset": 1843, 
+            "line": "<b>Counseling</b>", 
+            "anchor": "Counseling"
+        }, 
+        {
+            "index": "3", 
+            "level": "4", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "1.2", 
+            "byteoffset": 2187, 
+            "line": "<b>Provision of Contraceptives</b>", 
+            "anchor": "Provision_of_Contraceptives"
+        }, 
+        {
+            "index": "4", 
+            "level": "4", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "1.3", 
+            "byteoffset": 2411, 
+            "line": "<b>Follow-up and Referral System</b>", 
+            "anchor": "Follow-up_and_Referral_System"
+        }, 
+        {
+            "index": "5", 
+            "level": "4", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "1.4", 
+            "byteoffset": 2741, 
+            "line": "<b>Record Keeping</b>", 
+            "anchor": "Record_Keeping"
+        }, 
+        {
+            "index": "6", 
+            "level": "4", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "1.5", 
+            "byteoffset": 2964, 
+            "line": "<b>Supervision</b>", 
+            "anchor": "Supervision"
+        }, 
+        {
+            "index": "7", 
+            "level": "4", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "1.6", 
+            "byteoffset": 3325, 
+            "line": "<b>Logistics</b>", 
+            "anchor": "Logistics"
+        }, 
+        {
+            "index": "8", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 3757, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 98106110, 
+    "title": "Family planning"
+}

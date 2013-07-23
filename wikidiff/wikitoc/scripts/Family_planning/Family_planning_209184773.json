@@ -1,0 +1,78 @@
+{
+    "timestamp": "2008-04-30T07:34:53Z", 
+    "size": 5847, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1676, 
+            "line": "Definitions", 
+            "anchor": "Definitions"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 2111, 
+            "line": "Policy", 
+            "anchor": "Policy"
+        }, 
+        {
+            "index": "3", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.1", 
+            "byteoffset": 2123, 
+            "line": "China", 
+            "anchor": "China"
+        }, 
+        {
+            "index": "4", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.2", 
+            "byteoffset": 2727, 
+            "line": "United States", 
+            "anchor": "United_States"
+        }, 
+        {
+            "index": "5", 
+            "level": "3", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 2, 
+            "number": "2.3", 
+            "byteoffset": 4858, 
+            "line": "Other", 
+            "anchor": "Other"
+        }, 
+        {
+            "index": "6", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 5013, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "7", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "4", 
+            "byteoffset": 5041, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 209184773, 
+    "title": "Family planning"
+}

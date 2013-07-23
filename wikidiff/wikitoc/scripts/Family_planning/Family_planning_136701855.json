@@ -1,0 +1,38 @@
+{
+    "timestamp": "2007-06-07T22:15:49Z", 
+    "size": 2606, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 1585, 
+            "line": "Natural family planning", 
+            "anchor": "Natural_family_planning"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 2005, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "3", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "3", 
+            "byteoffset": 2052, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 136701855, 
+    "title": "Family planning"
+}

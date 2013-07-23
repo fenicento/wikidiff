@@ -1,0 +1,28 @@
+{
+    "timestamp": "2007-12-01T04:27:03Z", 
+    "size": 3483, 
+    "sections": [
+        {
+            "index": "1", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "1", 
+            "byteoffset": 2602, 
+            "line": "References", 
+            "anchor": "References"
+        }, 
+        {
+            "index": "2", 
+            "level": "2", 
+            "fromtitle": "Family_planning", 
+            "toclevel": 1, 
+            "number": "2", 
+            "byteoffset": 2892, 
+            "line": "See also", 
+            "anchor": "See_also"
+        }
+    ], 
+    "revid": 174987702, 
+    "title": "Family planning"
+}
